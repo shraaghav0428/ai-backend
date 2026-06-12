@@ -772,7 +772,7 @@
 
   // ── AI hint — calls Vercel backend (API key is server-side) ────────────
   const getHintFromAI = async (word, guesses) => {
-    const res = await fetch('/api/api/api/word-hint', {
+    const res = await fetch('/api/word-hint', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
